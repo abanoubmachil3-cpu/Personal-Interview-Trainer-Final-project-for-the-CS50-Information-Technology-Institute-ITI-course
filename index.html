@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interview Trainer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="main-header">
+            <p>Created by Abanoub Michael</p>
+            <p>Final project for the CS50 Information Technology Institute (ITI) course</p>
+
+            <h1>Personal Interview Trainer</h1>
+            <p>Prepare your answers with confidence and practice speaking fluently</p>
+        </header>
+
+        <section class="card">
+            <h2>Set Up Questions and Answers</h2>
+            <p>Choose the questions you want to practice, and write short notes for your answer (maximum 90 characters):</p>
+
+            <div class="category-group-1">
+                <h3>Introducing Yourself</h3>
+
+                <div class="question-item">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="q-check" value="Tell us about yourself.">
+                        <span>Tell us about yourself.</span>
+                    </label>
+                    <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                </div>
+
+                <div class="question-item">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="q-check" value="What are your most important skills?">
+                        <span>What are your most important skills?</span>
+                    </label>
+                    <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                </div>
+
+                <div class="question-item">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="q-check" value="What sets you apart from others?">
+                        <span>What sets you apart from others?</span>
+                    </label>
+                    <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                </div>
+            </div>
+
+            <div class="category-group-2">
+                <h3>Motivation and Goals</h3>
+
+                <div class="question-item">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="q-check" value="Why do you want this opportunity?">
+                        <span>Why do you want this opportunity?</span>
+                    </label>
+                    <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                </div>
+
+                <div class="question-item">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="q-check" value="What do you expect to learn from this experience?">
+                        <span>What do you expect to learn from this experience?</span>
+                    </label>
+                    <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                </div>
+
+                <div class="question-item">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="q-check" value="What goals do you want to achieve?">
+                        <span>What goals do you want to achieve?</span>
+                    </label>
+                    <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                </div>
+            </div>
+
+            <div class="category-group-3">
+                <h3>Situations and Problem Solving</h3>
+
+                <div class="question-item">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="q-check" value="Tell us about a problem you faced and how you handled it.">
+                        <span>Tell us about a problem you faced and how you handled it.</span>
+                    </label>
+                    <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                </div>
+
+                <div class="question-item">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="q-check" value="How do you act when you disagree with a colleague?">
+                        <span>How do you act when you disagree with a colleague?</span>
+                    </label>
+                    <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                </div>
+
+                <div class="question-item">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="q-check" value="What do you do if you are given a task and don't know how to start?">
+                        <span>What do you do if you are given a task and don't know how to start?</span>
+                    </label>
+                    <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                </div>
+
+                <div class="question-item">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="q-check" value="How do you react when you realize you made a mistake?">
+                        <span>How do you react when you realize you made a mistake?</span>
+                    </label>
+                    <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                </div>
+
+                <div class="question-item">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="q-check" value="How do you handle time pressure?">
+                        <span>How do you handle time pressure?</span>
+                    </label>
+                    <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                </div>
+
+                <div class="question-item">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="q-check" value="What do you do if you don't know the answer to a question?">
+                        <span>What do you do if you don't know the answer to a question?</span>
+                    </label>
+                    <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                </div>
+            </div>
+
+            <div class="category-group-4">
+                <h3>Add a Custom Question</h3>
+                <input type="text" id="custom-q-text" placeholder="Write your own question here...">
+                <button type="button" id="add-custom-btn" class="btn-secondary">Add Question</button>
+
+                <div id="custom-questions-list">
+                    <div class="question-item custom-item">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="q-check" value="">
+                            <span></span>
+                        </label>
+                        <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                    </div>
+
+                    <div class="question-item custom-item">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="q-check" value="">
+                            <span></span>
+                        </label>
+                        <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                    </div>
+
+                    <div class="question-item custom-item">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="q-check" value="">
+                            <span></span>
+                        </label>
+                        <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                    </div>
+
+                    <div class="question-item custom-item">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="q-check" value="">
+                            <span></span>
+                        </label>
+                        <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                    </div>
+
+                    <div class="question-item custom-item">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="q-check" value="">
+                            <span></span>
+                        </label>
+                        <input type="text" class="ans-single" maxlength="90" placeholder="Write your answer ideas here (max 90 characters)">
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-bar">
+                <button type="button" id="start-btn" class="btn-primary">Start Training</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <p><span id="question-counter" class="counter-badge">Training has not started yet</span></p>
+
+            <div class="practice-box">
+                <h2 id="current-question-text">Press “Start Training” to see the first question</h2>
+                <p>Speak your answer out loud and clearly, based on the points you prepared, without looking at them.</p>
+            </div>
+
+            <div class="action-bar">
+                <button type="button" id="next-btn" class="btn-primary">Next Question</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Final Review and Self-Evaluation</h2>
+            <p>Review the answers you wrote and rate your performance on each question separately:</p>
+
+        <div class="review-item-1">
+                <h4>1. Tell us about yourself.</h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_0" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_0" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_0" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_0" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_0" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_0" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+            <div class="review-item-1">
+                <h4>2. What are your most important skills?</h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_1" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_1" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_1" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_1" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_1" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_1" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+            <div class="review-item-1">
+                <h4>3. What sets you apart from others?</h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_2" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_2" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_2" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_2" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_2" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_2" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+            <div class="review-item-2">
+                <h4>4. Why do you want this opportunity?</h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_3" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_3" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_3" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_3" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_3" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_3" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+            <div class="review-item-2">
+                <h4>5. What do you expect to learn from this experience?</h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_4" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_4" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_4" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_4" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_4" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_4" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+            <div class="review-item-2">
+                <h4>6. What goals do you want to achieve?</h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_5" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_5" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_5" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_5" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_5" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_5" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+            <div class="review-item-3">
+                <h4>7. Tell us about a problem you faced and how you handled it.</h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_6" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_6" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_6" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_6" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_6" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_6" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+            <div class="review-item-3">
+                <h4>8. How do you act when you disagree with a colleague?</h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_7" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_7" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_7" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_7" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_7" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_7" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+            <div class="review-item-3">
+                <h4>9. What do you do if you are given a task and don't know how to start?</h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_8" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_8" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_8" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_8" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_8" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_8" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+            <div class="review-item-3">
+                <h4>10. How do you react when you realize you made a mistake?</h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_9" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_9" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_9" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_9" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_9" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_9" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+            <div class="review-item-3">
+                <h4>11. How do you handle time pressure?</h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_10" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_10" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_10" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_10" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_10" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_10" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+            <div class="review-item-3">
+                <h4>12. What do you do if you don't know the answer to a question?</h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_11" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_11" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_11" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_11" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_11" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_11" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+            <div class="review-item-4 custom-review">
+                <h4></h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_12" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_12" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_12" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_12" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_12" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_12" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+            <div class="review-item-4 custom-review">
+                <h4></h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_13" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_13" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_13" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_13" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_13" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_13" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+            <div class="review-item-4 custom-review">
+                <h4></h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_14" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_14" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_14" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_14" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_14" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_14" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+            <div class="review-item-4 custom-review">
+                <h4></h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_15" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_15" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_15" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_15" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_15" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_15" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+            <div class="review-item-4 custom-review">
+                <h4></h4>
+                <div class="answers-display">
+                    <p><strong>Written answer:</strong> <span class="review-ans">Appears here after the training ends</span></p>
+                </div>
+                <div class="rating-options">
+                    <label><input type="radio" name="rating_16" value="Excellent"> Excellent</label>
+                    <label><input type="radio" name="rating_16" value="Very good"> Very good</label>
+                    <label><input type="radio" name="rating_16" value="Average"> Average</label>
+                    <label><input type="radio" name="rating_16" value="Could have been better"> Could have been better</label>
+                    <label><input type="radio" name="rating_16" value="Need to practice it again"> Need to practice it again</label>
+                    <label><input type="radio" name="rating_16" value="Very poor"> Very poor</label>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-header">
+            <p>&copy; Created by Abanoub Michael</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

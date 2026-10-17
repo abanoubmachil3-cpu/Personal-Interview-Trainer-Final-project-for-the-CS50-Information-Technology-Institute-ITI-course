@@ -1,0 +1,179 @@
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #1f232b;
+    color: #8be9fd;
+    padding: 20px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1, h2, h3, h4 {
+    margin: 0 0 10px 0;
+}
+
+h1 {
+    font-size: 32px;
+    color: #f1fa8c;
+}
+
+h2 {
+    font-size: 24px;
+    color: #ff79c6;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    color: #f1fa8c;
+}
+
+p {
+    color: #bd93f9;
+    margin: 0 0 10px 0;
+}
+
+.card,
+.category-group-1,
+.category-group-2,
+.category-group-3,
+.category-group-4,
+.question-item,
+.review-item-1,
+.review-item-2,
+.review-item-3,
+.review-item-4,
+.answers-display {
+    border: 1px solid #444444;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.card,
+.question-item,
+.answers-display,
+.rating-options label {
+    background-color: #2a2f3a;
+}
+
+.answers-display p {
+    color: #50fa7b;
+    margin: 0;
+}
+
+.category-group-1 h3 {
+    color: #4da3ff;
+}
+
+.category-group-2 h3 {
+    color: #ff9f43;
+}
+
+.category-group-3 h3 {
+    color: #3ddc84;
+}
+
+.category-group-4 h3 {
+    color: #b57bff;
+}
+
+.category-group-1,
+.review-item-1 {
+    background-color: #1c3560;
+}
+
+.category-group-2,
+.review-item-2 {
+    background-color: #5a3510;
+}
+
+.category-group-3,
+.review-item-3 {
+    background-color: #14502c;
+}
+
+.category-group-4,
+.review-item-4 {
+    background-color: #45246b;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.category-group-4 input[type="text"] {
+    margin-bottom: 10px;
+}
+
+button {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    color: #10131a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background-color: #4da3ff;
+    width: 100%;
+    max-width: 250px;
+}
+
+.btn-secondary {
+    background-color: #bd93f9;
+}
+
+.action-bar {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.counter-badge {
+    background-color: #8be9fd;
+    color: #10131a;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.practice-box {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.rating-options {
+    display: flex;
+}
+
+.rating-options label {
+    padding: 5px 10px;
+    border: 1px solid #444444;
+    border-radius: 10px;
+}
+
+.custom-item,
+.custom-review {
+    display: none;
+}
