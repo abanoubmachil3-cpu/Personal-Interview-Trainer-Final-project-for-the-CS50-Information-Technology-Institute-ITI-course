@@ -37,7 +37,7 @@ addCustomBtn.addEventListener("click", function () {
 
     customCount++;
     customQText.value = "";
-    }
+}
 });
 
 startBtn.addEventListener("click", function () {
@@ -49,11 +49,7 @@ startBtn.addEventListener("click", function () {
             questions.push(checks[i].value);
         }
     }
-    
-function showQuestion() {
-    currentQuestionText.textContent = questions[current];
-    questionCounter.textContent = "Question " + (current + 1) + " of " + questions.length;
-}
+
     if (questions.length === 0) {
         alert("Choose at least one question.");
     }
@@ -61,7 +57,6 @@ function showQuestion() {
     current = 0;
     showQuestion();
 });
-
 
 
 nextBtn.addEventListener("click", function () {
