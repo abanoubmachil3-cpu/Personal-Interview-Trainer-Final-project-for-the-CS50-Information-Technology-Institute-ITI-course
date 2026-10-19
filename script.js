@@ -19,6 +19,7 @@ addCustomBtn.addEventListener("click", function () {
     if (text === "") {
         alert("Write the question first.");
     }
+    else{
 
     if (customCount === customItems.length) {
         alert("Maximum 5 custom questions.");
@@ -36,6 +37,7 @@ addCustomBtn.addEventListener("click", function () {
 
     customCount++;
     customQText.value = "";
+    }
 });
 
 startBtn.addEventListener("click", function () {
@@ -47,7 +49,11 @@ startBtn.addEventListener("click", function () {
             questions.push(checks[i].value);
         }
     }
-
+    
+function showQuestion() {
+    currentQuestionText.textContent = questions[current];
+    questionCounter.textContent = "Question " + (current + 1) + " of " + questions.length;
+}
     if (questions.length === 0) {
         alert("Choose at least one question.");
     }
@@ -56,10 +62,7 @@ startBtn.addEventListener("click", function () {
     showQuestion();
 });
 
-function showQuestion() {
-    currentQuestionText.textContent = questions[current];
-    questionCounter.textContent = "Question " + (current + 1) + " of " + questions.length;
-}
+
 
 nextBtn.addEventListener("click", function () {
     if (questions.length === 0) {
